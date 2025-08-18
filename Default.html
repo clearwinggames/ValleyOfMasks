@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+<h1 id="top_text" style="display: none">
+  <div style="padding: 16px; background-color: rgba(127, 127, 127, 63);  color: gold; position: absolute;	top: 0px; width: 100%;	text-align: center; z-index: 100; display:block;" id="topText">
+    Top Text
+  </div>
+</h1>
+<h2 id="mid_text" style="display: none">
+  <div style="width: 100%; text-align: center; top: 27%; position: absolute; z-index: 100; display: block;">
+    <div style="padding: 16px; background-color: rgba(127, 127, 127, 63); color: gold; width: 60%;	text-align: center; z-index: 100; display:inline-block;" id="midText">
+      Mid Text
+    </div>
+  </div>
+</h2>
+<div id="main">
+</div>
+<h1 id="bottom_text" style="display: none">
+  <div style="padding: 16px; background-color: rgba(127, 127, 127, 63); color: gold; position: absolute;	bottom: 100%; width: 100%;	text-align: center; z-index: 100; display:block;" id="bottomText">
+    Bottom Text
+  </div>
+</h1>
+<script src="./lib/main.js"></script>
+<script>
+  var context_data = null;
+  function init(data) {
+    context_data = data;
+  }
+</script>
+</body>
+</html>
