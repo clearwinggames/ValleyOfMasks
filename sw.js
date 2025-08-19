@@ -15,5 +15,11 @@ var VERSION = 'version_00';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/Default.html`,
-  `${GHPATH}/lib/main.js`
+  `${GHPATH}/lib/main.js`,
+  `${GHPATH}/lib/models.js`,
+  `${GHPATH}/lib/support.js`,
+  `${GHPATH}/lib/three/models.js`,
+  `${GHPATH}/lib/three/support.js`,
+  `${GHPATH}/lib/three/three.js`,
+  `${GHPATH}/lib/content/default.png`
 ]
