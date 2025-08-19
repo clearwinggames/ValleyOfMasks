@@ -1,0 +1,17 @@
+{
+  "name": "Valley Of Masks",
+  "short_name": "VoM",
+  "description": "Github Page as a Progressive Web App",
+  "scope": "/ValleyOfMasks/",
+  "start_url": "/ValleyOfMasks/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone", 
+  "icons": [
+      {
+        "src": "/ValleyOfMasks/cwg.png",
+        "type": "image/png",
+        "sizes": "200x200"
+      }
+  ]
+}
