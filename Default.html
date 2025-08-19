@@ -1,5 +1,7 @@
 <html>
 <head>
+  <link rel="canonical" href="https://clearwinggames.github.io/ValleyOfMasks/" />
+  <link rel="manifest" href="/ValleyOfMasks/manifest.json" />
 </head>
 <body>
 <h1 id="top_text" style="display: none">
@@ -27,6 +29,12 @@
   function init(data) {
     context_data = data;
   }
+  if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/ValleyOfMasks/sw.js',
+          {scope: '/ValleyOfMasks/'}
+        )
+      }
 </script>
 </body>
 </html>
