@@ -27,31 +27,8 @@ var URLS = [
  
   `${IGFPATH}/dirt32.png`,
   `${IGFPATH}/grass32.png`,
-  `${IGFPATH}/ivanGreatForest.192.dirt32.png`,
-  `${IGFPATH}/ivanGreatForest.192.grass32.png`,
-  `${IGFPATH}/ivanGreatForest.192.ivanGreatForest192_cc_testStairs0.png`,
-  `${IGFPATH}/ivanGreatForest.192.ivanGreatForest192_cc_testStairsDown0.png`,
-  `${IGFPATH}/ivanGreatForest.192.ivanGreatForest192_cc_tile60.png`,
-  `${IGFPATH}/ivanGreatForest.192.stone32.png`,
-  `${IGFPATH}/ivanGreatForest.192.stoneWall32.png`,
-  `${IGFPATH}/ivanGreatForest.192.water1.png`,
-  `${IGFPATH}/ivanGreatForest.192.water10.png`,
-  `${IGFPATH}/ivanGreatForest.192.water11.png`,
-  `${IGFPATH}/ivanGreatForest.192.water12.png`,
-  `${IGFPATH}/ivanGreatForest.192.water14.png`,
-  `${IGFPATH}/ivanGreatForest.192.water15.png`,
-  `${IGFPATH}/ivanGreatForest.192.water13.png`,
-  `${IGFPATH}/ivanGreatForest.192.water2.png`,
-  `${IGFPATH}/ivanGreatForest.192.water3.png`,  
-  `${IGFPATH}/ivanGreatForest.192.water4.png`,
-  `${IGFPATH}/ivanGreatForest.192.water5.png`,
-  `${IGFPATH}/ivanGreatForest.192.water6.png`,
-  `${IGFPATH}/ivanGreatForest.192.water7.png`,
-  `${IGFPATH}/ivanGreatForest.192.water8.png`,
-  `${IGFPATH}/ivanGreatForest.192.water9.png`,
   `${IGFPATH}/ivanGreatForest.205.htm`,
   `${IGFPATH}/ivanGreatForest.205.html`,
-  `${IGFPATH}/ivanGreatForest.205.xmlr`,
   `${IGFPATH}/ivanGreatForest205_cc_testStairs0.png`,
   `${IGFPATH}/ivanGreatForest205_cc_testStairsDown0.png`,
   `${IGFPATH}/ivanGreatForest205_cc_tile60.png`,
@@ -62,7 +39,7 @@ var URLS = [
   `${IGFPATH}/water11.png`,
   `${IGFPATH}/water12.png`,
   `${IGFPATH}/water13.png`,
- `${IGFPATH}/water14.png`,
+  `${IGFPATH}/water14.png`,
   `${IGFPATH}/water15.png`,
   `${IGFPATH}/water2.png`,
   `${IGFPATH}/water3.png`,
@@ -74,6 +51,7 @@ var URLS = [
   `${IGFPATH}/water9.png`,
 
 ]
+
 
 
 
