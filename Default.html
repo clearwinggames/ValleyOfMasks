@@ -36,5 +36,52 @@
         )
       }
 </script>
+  <script>
+document.addEventListener('keydown', function(event) {
+if (event.key === 'o') 
+{
+	if (document.getElementById('embedded_iframe') != null) {
+		document.getElementById('embedded_iframe').contentDocument.getElementById('canvasDiv').requestFullscreen();
+		//hide_mid_text();
+		//document.getElementById('embedded_iframe').remove();		
+		return;
+	}
+			httpGet('/lib/ghtml/igf/ivanGreatForest.205.html').then(str =>			
+			{
+				if (document.getElementById('embedded_iframe') == null)
+				{
+					let iframe = document.createElement('iframe');
+					iframe.id = 'embedded_iframe';
+					let wdt = 240;
+					let hgt = 160;
+					iframe.width = wdt;
+					iframe.height = hgt;
+					iframe.scrolling = 'no';
+					
+					str = str.replaceAll('src="', 'src="/lib/ghtml/igf/').replace('<html>', '').replace('</html>', '');
+					str = str.replaceAll('"imageFilePath":"', '"imageFilePath":"/lib/ghtml/igf/');
+					//str = str.replaceAll('position: absolute;', '').replace('width: 100%;', 'width: 640;').replace('height: 100%;', 'height: 480;');
+					str = 'Press O Key Again To Load Game<div width="' + wdt + 'px" height="' + hgt + 'px">' + str + '</div>';
+				
+					iframe.srcdoc = str;
+				
+					console.log(str);
+					show_mid_text( iframe.outerHTML );	
+
+					const myDiv = document.getElementById('embedded_iframe');
+  
+					if (myDiv == null) {
+  
+						return;
+					}
+					const innerMyDiv = myDiv.contentDocument.getElementById('canvasDiv');
+			
+				}
+				//hide_mid_text();
+			});
+
+ }
+});
+</script>
 </body>
 </html>
