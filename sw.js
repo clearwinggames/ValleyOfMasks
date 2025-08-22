@@ -8,7 +8,7 @@ var APP_PREFIX = 'vom_';
 // you need to change this version (version_01, version_02…). 
 // If you don't change the version, the service worker will give your
 // users the old files!
-var VERSION = 'version_0_0_0_0';
+var VERSION = 'version_0_0_0_1';
  
 // The files to make available for offline use. make sure to add 
 // others to this list
@@ -23,4 +23,5 @@ var URLS = [
   `${GHPATH}/lib/three/three.js`,
   `${GHPATH}/lib/content/default.png`
 ]
+
 
