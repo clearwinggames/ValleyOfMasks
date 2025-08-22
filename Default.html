@@ -48,6 +48,7 @@ else if (event.key === 'o')
 {
 	if (document.getElementById('embedded_iframe') != null) {
 		document.getElementById('embedded_iframe').contentDocument.getElementById('canvasDiv').requestFullscreen();
+		document.getElementById('embedded_iframe').contentDocument.getElementById('canvasDiv').focus();
 		//hide_mid_text();
 		//document.getElementById('embedded_iframe').remove();		
 		return;
