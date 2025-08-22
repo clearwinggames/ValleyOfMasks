@@ -6,7 +6,7 @@
   "start_url": "/ValleyOfMasks/Default.html?game=threeGames/sample",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
-  "display": "standalone", 
+  "display": "fullscreen", 
   "icons": [
       {
         "src": "/ValleyOfMasks/cwg.png",
@@ -16,3 +16,4 @@
   ]
 
 }
+
