@@ -38,7 +38,13 @@
 </script>
   <script>
 document.addEventListener('keydown', function(event) {
-if (event.key === 'o') 
+
+if (event.key === 'p')
+{
+	hide_mid_text();
+	document.getElementById('embedded_iframe').remove();	
+}
+else if (event.key === 'o') 
 {
 	if (document.getElementById('embedded_iframe') != null) {
 		document.getElementById('embedded_iframe').contentDocument.getElementById('canvasDiv').requestFullscreen();
@@ -61,7 +67,7 @@ if (event.key === 'o')
 					str = str.replaceAll('src="', 'src="/ValleyOfMasks/lib/ghtml/igf/').replace('<html>', '').replace('</html>', '');
 					str = str.replaceAll('"imageFilePath":"', '"imageFilePath":"/lib/ghtml/igf/');
 					//str = str.replaceAll('position: absolute;', '').replace('width: 100%;', 'width: 640;').replace('height: 100%;', 'height: 480;');
-					str = 'Press O Key Again To Load Game<div width="' + wdt + 'px" height="' + hgt + 'px">' + str + '</div>';
+					str = 'Press O Key Again To Load Game Or P To Clear<div width="' + wdt + 'px" height="' + hgt + 'px">' + str + '</div>';
 				
 					iframe.srcdoc = str;
 				
