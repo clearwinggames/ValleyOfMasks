@@ -28,7 +28,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 	return fs;
 }
 
-newThreeScene(first_scene).then(s1 => 
+newThreeScene(first_scene()).then(s1 => 
 {
 	//turnOnAutosave('sample-game');
 
