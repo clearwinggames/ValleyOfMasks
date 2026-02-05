@@ -21,7 +21,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 
 ];
 
-	fs[2].wireEventFor(0, 0, 0, () => 
+	fs[2].wireEventFor(1, 1, 1, () => 
 	{
 		alert('foo bar');
 	});
