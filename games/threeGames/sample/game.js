@@ -21,10 +21,17 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 
 ];
 
+		let otherPlat = new CubePlane(3, -0.5, 3, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
+	
+	otherPlat.wireEventFor((plat) => {
+alert('bing');
+	});
+
 	fs[2].wireEventFor(1, 1, 1, () => 
 	{
 		alert('foo bar');
 	});
+	fs.push(otherPlat);
 	return fs;
 }
 
