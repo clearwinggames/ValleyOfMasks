@@ -1,7 +1,6 @@
 let coordsStart = { x: 0, y: 0, z: 0 };
 let dimensions = { x: 1, y: 1, z: 1 };
-newThreeScene(
-[ 
+let first_scene = [ 
 
 
 new Grid3D(coordsStart.x, -1, 1, dimensions.x, dimensions.y, dimensions.z, 14, 12, 13)
@@ -19,7 +18,14 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 //new Grid3D(0, 0, 0, 1, 1, 1, 1, 1, 1).drawSolidCube(0, 0, 0, 1, 1, 1, new Sprite(0, 0, 32, 32, 'kioskx.png'))
 //new Grid3D(0, 1, 0, 1, 1, 1, 12, 12, 12).drawSolidCube(3, 1, 3, 4, 4, 4, new Sprite(0, 0, 32, 32, 'kioskx.png')) 
 
-]).then(s1 => 
+];
+
+	first_scene[2].wireEventFor(0, 0, 0, () => 
+	{
+		alert('foo bar');
+	});
+
+newThreeScene(first_scene).then(s1 => 
 {
 	//turnOnAutosave('sample-game');
 
