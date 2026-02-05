@@ -24,6 +24,8 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 	//turnOnAutosave('sample-game');
 
 	//tryLoadGame('sample-game');
-			
-	startGameLoop();
+
+	setTimeout(() => {
+		startGameLoop();
+	}, 1000);
 });
