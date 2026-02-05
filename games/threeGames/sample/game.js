@@ -1,6 +1,7 @@
 let coordsStart = { x: 0, y: 0, z: 0 };
 let dimensions = { x: 1, y: 1, z: 1 };
-let first_scene = [ 
+function first_scene() { 
+	let fs = [
 
 
 new Grid3D(coordsStart.x, -1, 1, dimensions.x, dimensions.y, dimensions.z, 14, 12, 13)
@@ -12,7 +13,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 				   new Sprite(0, 0, 32, 32, 'brickx.png')),
 
 new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensions.z, 12, 12, 12)
-	.drawSolidCube(4, 1, 4, 1, 1, 1, 
+	.drawSolidCube(5, 1, 5, 1, 1, 1, 
 				   new Sprite(0, 0, 32, 32, 'kioskx.png'))	
 	
 //new Grid3D(0, 0, 0, 1, 1, 1, 1, 1, 1).drawSolidCube(0, 0, 0, 1, 1, 1, new Sprite(0, 0, 32, 32, 'kioskx.png'))
@@ -20,10 +21,12 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 
 ];
 
-	first_scene[2].wireEventFor(0, 0, 0, () => 
+	fs[2].wireEventFor(0, 0, 0, () => 
 	{
 		alert('foo bar');
 	});
+	return fs;
+}
 
 newThreeScene(first_scene).then(s1 => 
 {
