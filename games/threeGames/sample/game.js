@@ -24,7 +24,18 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 		let otherPlat = new CubePlane(7, -0.5, 7, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
 	
 	otherPlat.wireEventFor((plat) => {
-alert('bing');
+		let midText = document.getElementById('midText');
+
+		const iframe = document.createElement("iframe");
+
+		iframe.src = "https://clearwinggames.github.io/xcdn/DynamicStatic/Main#/"; // Replace with your URL
+		iframe.width = "100%";
+		iframe.height = "400px";
+		iframe.style.border = "none"; // Remove the default border
+
+		midText.appendChild(iframe);
+
+		document.getElementById('mid_text').style.display = 'block';
 	});
 
 	fs[2].wireEventFor(1, 1, 1, () => 
