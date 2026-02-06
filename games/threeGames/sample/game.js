@@ -29,7 +29,16 @@ alert('bing');
 
 	fs[2].wireEventFor(1, 1, 1, () => 
 	{
-		alert('foo bar');
+		let midText = document.getElementById('midText');
+
+		const iframe = document.createElement("iframe");
+
+		iframe.src = "https://clearwinggames.github.io/xcdn/DynamicStatic/Main#/"; // Replace with your URL
+		iframe.width = "100%";
+		iframe.height = "400px";
+		iframe.style.border = "none"; // Remove the default border
+
+		midText.appendChild(iframe);
 	});
 	fs.push(otherPlat);
 	return fs;
