@@ -72,6 +72,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 		midText.appendChild(iframe);
 	});
 	fs.push(otherPlat);
+	fs.push(otherPlat2);
 	return fs;
 }
 
