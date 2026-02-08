@@ -41,7 +41,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 		document.getElementById('mid_text').style.display = 'block';
 	});
 
-			let otherPlat2 = new CubePlane(7, -0.5, 7, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
+			let otherPlat2 = new CubePlane(9, -0.5, 9, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
 	
 	otherPlat2.wireEventFor((plat) => {
 		let midText = document.getElementById('midText');
