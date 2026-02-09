@@ -31,7 +31,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 
 		const iframe = document.createElement("iframe");
 
-		iframe.src = "https://clearwinggames.github.io/xcdn/DynamicStatic/Main#/"; // Replace with your URL
+		iframe.src = "https://clearwinggames.github.io/ValleyOfMasks/Default.html?game=ConfettiShooter"; // Replace with your URL
 		iframe.width = "100%";
 		iframe.height = "400px";
 		iframe.style.border = "none"; // Remove the default border
