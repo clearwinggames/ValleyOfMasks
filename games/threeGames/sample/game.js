@@ -27,35 +27,17 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 		let otherPlat = new CubePlane(7, -0.5, 7, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
 	
 	otherPlat.wireEventFor((plat) => {
-		let midText = document.getElementById('midText');
 
-		const iframe = document.createElement("iframe");
-
-		iframe.src = "https://clearwinggames.github.io/ValleyOfMasks/Default.html?game=ConfettiShooter"; // Replace with your URL
-		iframe.width = "100%";
-		iframe.height = "400px";
-		iframe.style.border = "none"; // Remove the default border
-
-		midText.appendChild(iframe);
-
-		document.getElementById('mid_text').style.display = 'block';
+		show_iframe_in_mid_text('https://clearwinggames.github.io/ValleyOfMasks/Default.html?game=ConfettiShooter');
+		
 	});
 
 			let otherPlat2 = new CubePlane(9, -0.5, 9, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
 	
 	otherPlat2.wireEventFor((plat) => {
-		let midText = document.getElementById('midText');
-
-		const iframe = document.createElement("iframe");
-
-		iframe.src = "https://clearwinggames.github.io/xcdn/DynamicStatic/Main#/CWGJS/"; // Replace with your URL
-		iframe.width = "100%";
-		iframe.height = "400px";
-		iframe.style.border = "none"; // Remove the default border
-
-		midText.appendChild(iframe);
-
-		document.getElementById('mid_text').style.display = 'block';
+		
+		show_iframe_in_mid_text('https://clearwinggames.github.io/xcdn/DynamicStatic/Main#/CWGJS/');
+		
 	});
 
 	fs[2].wireEventFor(1, 1, 1, () => 
