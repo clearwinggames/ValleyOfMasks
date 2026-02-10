@@ -31,10 +31,10 @@ function setup_game() {
 
     loadNewScene(firstscene);   
 
-    turnOnAutosave('Ranger');
+    //turnOnAutosave('Ranger');
 
-    if (is_game_setup == false)
-        tryLoadGame();
+    //if (is_game_setup == false)
+    //    tryLoadGame();
 
     is_game_setup = true;
 }
@@ -76,4 +76,5 @@ function standard_game_logic() {
         moveCurrentSceneBy(0, -4);
     }
 }
+
 
