@@ -31,7 +31,7 @@ function setup_game() {
 
     loadNewScene(firstscene);   
 
-    turnOnAutosave('CIBR-Ranger');
+    turnOnAutosave('Ranger');
 
     if (is_game_setup == false)
         tryLoadGame();
@@ -76,3 +76,4 @@ function standard_game_logic() {
         moveCurrentSceneBy(0, -4);
     }
 }
+
