@@ -24,7 +24,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 
 ];
 
-		let otherPlat = new CubePlane(7, -1, 7, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
+		let otherPlat = new CubePlane(7, 0, 7, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
 	
 	otherPlat.wireEventFor((plat) => {
 
@@ -32,11 +32,19 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 		
 	});
 
-			let otherPlat2 = new CubePlane(9, -1, 9, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
+			let otherPlat2 = new CubePlane(9, 0, 9, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
 	
 	otherPlat2.wireEventFor((plat) => {
 		
 		show_iframe_in_mid_text('https://clearwinggames.github.io/xcdn/DynamicStatic/Main#/CWGJS/');
+		
+	});
+
+	let otherPlat3 = new CubePlane(11, 0, 11, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
+	
+	otherPlat3.wireEventFor((plat) => {
+		
+		show_iframe_in_mid_text('https://clearwinggames.github.io/ValleyOfMasks/Default.html?game=Ranger');
 		
 	});
 
@@ -55,6 +63,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 	});
 	fs.push(otherPlat);
 	fs.push(otherPlat2);
+	fs.push(otherPlat3);
 	return fs;
 }
 
