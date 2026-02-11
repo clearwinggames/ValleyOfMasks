@@ -45,7 +45,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 		
 	});
 
-		let otherPlat4 = new CubePlane(11, 0, 7 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
+		let otherPlat4 = new CubePlane(11, 0, 7, 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
 	
 	otherPlat4.wireEventFor((plat) => {
 		
