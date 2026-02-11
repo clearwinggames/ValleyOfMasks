@@ -1,12 +1,9 @@
 let coordsStart = { x: 0, y: 0, z: 0 };
 let dimensions = { x: 1, y: 1, z: 1 };
 
-
-
 function first_scene() { 
 	let fs = [
-
-
+		
 new Grid3D(coordsStart.x, -1, 1, dimensions.x, dimensions.y, dimensions.z, 14, 12, 13)
 	.drawSolidCube(0, 0, 0, 14, 1, 12, 
 				new Sprite(0, 0, 32, 32, 'brickx.png')),
@@ -48,6 +45,15 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 		
 	});
 
+		let otherPlat4 = new CubePlane(11, 0, 7 1, 1, 1, new Sprite(0,0,32,32,'kioskx.png'));
+	
+	otherPlat4.wireEventFor((plat) => {
+		
+		show_fullscreen_in_mid_text('https://clearwinggames.github.io/ValleyOfMasks/Default.html?game=Ranger',
+								   'iframediv_ranger', 'div_ranger', 'hello');
+		
+	});
+
 	fs[2].wireEventFor(1, 1, 1, () => 
 	{
 		let midText = document.getElementById('midText');
@@ -64,6 +70,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 	fs.push(otherPlat);
 	fs.push(otherPlat2);
 	fs.push(otherPlat3);
+	fs.push(otherPlat4);
 	return fs;
 }
 
