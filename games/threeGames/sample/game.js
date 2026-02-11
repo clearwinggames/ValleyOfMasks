@@ -49,7 +49,7 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 	
 	otherPlat4.wireEventFor((plat) => {
 		
-		show_fullscreen_in_mid_text('https://clearwinggames.github.io/ValleyOfMasks/Default.html?game=Ranger',
+		show_fullscreen_mid_text('https://clearwinggames.github.io/ValleyOfMasks/Default.html?game=Ranger',
 								   'iframediv_ranger', 'div_ranger', 'hello');
 		
 	});
