@@ -33,7 +33,8 @@ new Grid3D(coordsStart.x, -1, coordsStart.z, dimensions.x, dimensions.y, dimensi
 	
 	otherPlat2.wireEventFor((plat) => {
 		
-		show_iframe_in_mid_text('https://clearwinggames.github.io/xcdn/DynamicStatic/Main#/CWGJS/');
+		show_fullscreen_mid_text('https://clearwinggames.github.io/xcdn/DynamicStatic/Main#/CWGJS/',
+								'iframediv_cwgjs', 'unsure', 'hello press z', 'z');
 		
 	});
 
