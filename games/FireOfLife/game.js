@@ -15,16 +15,18 @@ let first_scene = () => {
 
 
 
-keydownActions.push({ name: 'one', keyval: 'up', action: () => { moveCurrentSceneBy(0, -4); } });
-keydownActions.push({ name: 'two', keyval: 'down', action: () => { moveCurrentSceneBy(0, 4); } });
-keydownActions.push({ name: 'three', keyval: 'left', action: () => { moveCurrentSceneBy(-4, 0); } });
-keydownActions.push({ name: 'four', keyval: 'right', action: () => { moveCurrentSceneBy(4, 0); } });
 
 setTimeout(() => {
     loadNewScene(first_scene());
-
+    
+    keydownActions.push({ name: 'one', keyval: 'up', action: () => { moveCurrentSceneBy(0, -4); } });
+    keydownActions.push({ name: 'two', keyval: 'down', action: () => { moveCurrentSceneBy(0, 4); } });
+    keydownActions.push({ name: 'three', keyval: 'left', action: () => { moveCurrentSceneBy(-4, 0); } });
+    keydownActions.push({ name: 'four', keyval: 'right', action: () => { moveCurrentSceneBy(4, 0); } });
+    
     startGameLoop();
 }, 500);
+
 
 
 
