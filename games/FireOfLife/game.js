@@ -1,8 +1,8 @@
 
 let canvas = document.getElementById('gameCanvas');
-canvas.style.height = '600px';
-canvas.style.width = '800px';
-canvas.height = 150;
+canvas.style.height = '480px';
+canvas.style.width = '600px';
+canvas.height = 160;
 canvas.width = 200;
 
 let first_scene = () => {
@@ -32,6 +32,7 @@ setTimeout(() => {
     
     startGameLoop();
 }, 500);
+
 
 
 
