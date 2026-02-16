@@ -2,12 +2,13 @@
 let canvas = document.getElementById('gameCanvas');
 canvas.style.height = '600px';
 canvas.style.width = '800px';
-canvas.height = 300;
-canvas.width = 400;
+canvas.height = 150;
+canvas.width = 200;
 
 let first_scene = () => {
     let firstGrid = new Grid(-128, -128, 32, 32, 24, 24, new Sprite(0, 0, 32, 32, 'grass32.png'));    
     let secondGrid =  new Grid(64, 128, 32, 32, 8, 8, new Sprite(0, 0, 32, 32, 'dirt32.png'));
+    firstGrid.turnBoundsOn([ { 'x': 0, 'y': 0, 'w': 32 * 24, 'h': 32 * 24 }]);
     secondGrid.turnCollisionOn([{ 'x': 128, 'y': 128, 'w':32, 'h':32 }]);
     
     return new Array
@@ -31,6 +32,7 @@ setTimeout(() => {
     
     startGameLoop();
 }, 500);
+
 
 
 
