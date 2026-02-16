@@ -1,7 +1,9 @@
 
 let canvas = document.getElementById('gameCanvas');
-canvas.style.height = '300px';
-canvas.style.width = '400px';
+canvas.style.height = '600px';
+canvas.style.width = '800px';
+canvas.height = 300;
+canvas.width = 400;
 
 let first_scene = () => {
     let firstGrid = new Grid(-128, -128, 32, 32, 24, 24, new Sprite(0, 0, 32, 32, 'grass32.png'));    
@@ -29,6 +31,7 @@ setTimeout(() => {
     
     startGameLoop();
 }, 500);
+
 
 
 
