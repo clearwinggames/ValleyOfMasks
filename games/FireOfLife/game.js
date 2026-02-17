@@ -16,8 +16,9 @@ let first_scene = () => {
     
     return new Array
     (
+        secondGrid,
         firstGrid, 
-        secondGrid
+//        secondGrid
         ,renderSprite
     );
 };
@@ -36,6 +37,7 @@ setTimeout(() => {
     
     startGameLoop();
 }, 500);
+
 
 
 
