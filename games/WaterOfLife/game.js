@@ -5,6 +5,7 @@ canvas.style.width = '600px';
 canvas.height = 160;
 canvas.width = 200;
 
+setTimeout(() => {
 loadScript(location.href.split(location.pathname)[0] + location.pathname.replace('Default.html', '') + '/lib/Shared_Lib/components2d/scene_of_life.js').then(x => {
   setTimeout(() => {
     loadNewScene(scene_of_life());
@@ -17,4 +18,6 @@ loadScript(location.href.split(location.pathname)[0] + location.pathname.replace
     startGameLoop();
   }, 500);
 });
+}, 500);
+
 
