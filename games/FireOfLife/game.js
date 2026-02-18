@@ -12,9 +12,9 @@ let first_scene = () => {
     let firstGrid = new Grid(-128, -128, 32, 32, 24, 24, new Sprite(0, 0, 32, 32, 'grass32.png'));    
     let secondGrid =  new Grid(64, 128, 32, 32, 8, 8, new Sprite(0, 0, 32, 32, 'redstone32.png'));
     firstGrid.turnBoundsOn(canvas);
-    secondGrid.turnCollisionOn([ renderSprite ], (grid, cw, tile) => 
+    secondGrid.turnCollisionOn([ renderSprite ], (grid, cw, tile, j, i) => 
     { 
-        grid.innerGrid[tile.j][tile.i] = null;
+        grid.innerGrid[j][i] = -1;
     });
     
     return new Array
@@ -39,6 +39,7 @@ setTimeout(() => {
     
     startGameLoop();
 }, 500);
+
 
 
 
