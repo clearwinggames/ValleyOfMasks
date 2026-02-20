@@ -82,7 +82,8 @@ newThreeScene(first_scene()).then(s1 =>
 	//tryLoadGame('sample-game');
 
 	setTimeout(() => {
-		adjustResolution(3, 3);
+//		adjustResolution(3, 3);
+		lowerResolutionTo(0.5);
 		startGameLoop();
 	}, 1000);
 });
