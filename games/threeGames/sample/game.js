@@ -7,7 +7,9 @@ function alternate_first_scene() {
 	let fs = [ 
 				floor
 		];
-	
+	setTimeout(() => {
+		setSkyColorToString('#007fff');
+	}, 1000);
 	return fs;
 }
 
