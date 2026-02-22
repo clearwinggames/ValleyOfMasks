@@ -1,8 +1,8 @@
 <html>
 <head>
-<script src="./vue2.js"></script>
-<script src="./vueRouter.js"></script>
-<script src="./RecursiveVueApp.js"></script>
+<script src="https://clearwinggames.github.io/xcdn/DynamicStatic/vue2.js"></script>
+<script src="https://clearwinggames.github.io/xcdn/DynamicStatic/vueRouter.js"></script>
+<script src="https://clearwinggames.github.io/xcdn/DynamicStatic/RecursiveVueApp.js"></script>
 </head>
 <body>
 <div id="app">
@@ -10,7 +10,7 @@
     <router-view name="alt"></router-view>
   </div>
   <div>
-    <recursive-vue-app :debug="is_debug" structure-url="./main/main.json" :router="router_hub" level-name="main" router-path="vue.router_hub" />
+    <recursive-vue-app :debug="is_debug" structure-url="./main.json" :router="router_hub" level-name="main" router-path="vue.router_hub" />
   </div>
   <div>
       <router-view></router-view>
@@ -61,3 +61,4 @@ data: {
 </script>
 </body>
 </html>
+
