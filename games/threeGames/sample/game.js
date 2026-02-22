@@ -12,10 +12,18 @@ function alternate_first_scene() {
 	let outerwall2 = new Grid3D(coordsStart.x, 0, coordsStart.z, dimensions.x, dimensions.y, dimensions.z, 13, 1, 1)
 	    .drawSolidCube(0, 0, 0, 13, 1, 1, new Sprite(0, 0, 32, 32, 'densetreesx.png'));
 	
+	let outerwall3 = new Grid3D(coordsStart.x, 0, coordsStart.z, dimensions.x, dimensions.y, dimensions.z, 1, 1, 14)
+	    .drawSolidCube(13, 0, 0, 1, 1, 1, new Sprite(0, 0, 32, 32, 'densetreesx.png'));
+
+	let outerwall4 = new Grid3D(coordsStart.x, 0, coordsStart.z, dimensions.x, dimensions.y, dimensions.z, 13, 1, 1)
+	    .drawSolidCube(0, 0, 14, 1, 1, 1, new Sprite(0, 0, 32, 32, 'densetreesx.png'));
+	
 	let fs = [ 
 				floor,
 				outerwall1,
-				outerwall2
+				outerwall2,
+		        outerwall3,
+		        outerwall4
 		];
 	setTimeout(() => {
 		setSkyColorToString('#007fff');
