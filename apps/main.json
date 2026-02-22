@@ -3,7 +3,7 @@
 	{
 		"title": "CWGJS",
 		"route": "/CWGJS",
-		"target": "./apps/second.json",
+		"target": "./second.json",
 		"template": "<div>CWGJS Here<div>{{ recurse }}</div></div>",
 		"view": {
 			"name": "",
@@ -30,4 +30,5 @@
 	}
 	]
 }
+
 
