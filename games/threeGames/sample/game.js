@@ -114,6 +114,7 @@ newThreeScene(alternate_first_scene()).then(s1 =>
 	setTimeout(() => {
 //		adjustResolution(3, 3);
 //		lowerResolutionTo(0.5);
+		startDayCycle(250, 1000 * 6);
 		startGameLoop();
 	}, 1000);
 });
