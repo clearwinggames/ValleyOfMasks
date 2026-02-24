@@ -25,9 +25,9 @@ function alternate_first_scene() {
 		        outerwall3,
 		        outerwall4
 		];
-	setTimeout(() => {
+	/*setTimeout(() => {
 		setSkyColorToString('#007fff');
-	}, 1000);
+	}, 1000);*/
 	return fs;
 }
 
@@ -114,7 +114,7 @@ newThreeScene(alternate_first_scene()).then(s1 =>
 	setTimeout(() => {
 //		adjustResolution(3, 3);
 //		lowerResolutionTo(0.5);
-		startDayCycle(250, 1000 * 6);
+		startDayCycle(50, 1000 * 6);
 		startGameLoop();
 	}, 1000);
 });
