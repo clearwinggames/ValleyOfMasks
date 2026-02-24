@@ -7,16 +7,16 @@ function alternate_first_scene() {
 	.drawSolidCube(0, 0, 0, 14, 1, 12, new Sprite(0, 0, 32, 32, 'grassxs.png'));
 	
 	let outerwall1 = new Grid3D(coordsStart.x, 0, coordsStart.z, dimensions.x, dimensions.y, dimensions.z, 1, 1, 14)
-	    .drawSolidCube(0, 0, 0, 1, 1, 14, new Sprite(0, 0, 32, 32, 'brickx.png'));
+	    .drawSolidCube(0, 0, 0, 1, 1, 14, new Sprite(0, 0, 32, 32, 'brickxs.png'));
 
 	let outerwall2 = new Grid3D(coordsStart.x, 0, coordsStart.z, dimensions.x, dimensions.y, dimensions.z, 13, 1, 1)
-	    .drawSolidCube(0, 0, 0, 13, 1, 1, new Sprite(0, 0, 32, 32, 'densetreesx.png'));
+	    .drawSolidCube(0, 0, 0, 13, 1, 1, new Sprite(0, 0, 32, 32, 'densetreesxs.png'));
 	
 	let outerwall3 = new Grid3D(coordsStart.x + 10, 0, coordsStart.z, dimensions.x, dimensions.y, dimensions.z, 1, 1, 14)
-	    .drawSolidCube(0, 0, 0, 1, 1, 14, new Sprite(0, 0, 32, 32, 'densetreesx.png'));
+	    .drawSolidCube(0, 0, 0, 1, 1, 14, new Sprite(0, 0, 32, 32, 'densetreesxs.png'));
 
 	let outerwall4 = new Grid3D(coordsStart.x, 0, coordsStart.z + 10, dimensions.x, dimensions.y, dimensions.z, 13, 1, 1)
-	    .drawSolidCube(0, 0, 0, 13, 1, 1, new Sprite(0, 0, 32, 32, 'densetreesx.png'));
+	    .drawSolidCube(0, 0, 0, 13, 1, 1, new Sprite(0, 0, 32, 32, 'densetreesxs.png'));
 	
 	let fs = [ 
 				floor,
